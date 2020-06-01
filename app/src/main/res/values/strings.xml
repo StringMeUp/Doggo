@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Doggo</string>
+    <string name="title_textView">All Doggoes In One App</string>
+    //DogDetails and Dog Card
+    <string name="name">name</string>
+    <string name="temperament">temperament</string>
+    <string name="width">width</string>
+    <string name="weight">weight</string>
+    <string name="height">height</string>
+    <string name="breed_for">breed for</string>
+    <string name="breed_group">breed group</string>
+    <string name="life_span">life span</string>
+    //menu
+    <string name="random">Random</string>
+    <string name="details">Details</string>
+    <string name="search">Search</string>
+    <string name="more">More</string>
+    //searchFragment
+    <string name="search_TextView">All Dog Breeds…</string>
+    //moreDogsFragment
+    <string name="moreDogs_TextView">More Dogs and Details</string>
+    //searchFragment Spinner
+    <string-array name="allBreeds">
+        <item>"affenpinscher"</item>
+        <item>"african"</item>
+        <item>"airedale"</item>
+        <item>"akita"</item>
+        <item>"appenzeller"</item>
+        <item>"australian"</item>
+        <item>"basenji"</item>
+        <item>"beagle"</item>
+        <item>"bluetick"</item>
+        <item>"borzoi"</item>
+        <item>"bouvier"</item>
+        <item>"boxer"</item>
+        <item>"brabancon"</item>
+        <item>"briard"</item>
+        <item>"buhund"</item>
+        <item>"bulldog"</item>
+        <item>"bullterrier"</item>
+        <item>"cairn"</item>
+        <item>"cattledog"</item>
+        <item>"chihuahua"</item>
+        <item>"chow"</item>
+        <item>"clumber"</item>
+        <item>"cockapoo"</item>
+        <item>"collie"</item>
+        <item>"coonhound"</item>
+        <item>"corgi"</item>
+        <item>"cotondetulear"</item>
+        <item>"dachshund"</item>
+        <item>"dalmatian"</item>
+        <item>"dane"</item>
+        <item>"deerhound"</item>
+        <item>"dhole"</item>
+        <item>"dingo"</item>
+        <item>"doberman"</item>
+        <item>"elkhound"</item>
+        <item>"entlebucher"</item>
+        <item>"eskimo"</item>
+        <item>"finnish"</item>
+        <item>"frise"</item>
+        <item>"germanshepherd"</item>
+        <item>"greyhound"</item>
+        <item>"groenendael"</item>
+        <item>"havanese"</item>
+        <item>"hound"</item>
+        <item>"husky"</item>
+        <item>"keeshond"</item>
+        <item>"kelpie"</item>
+        <item>"komondor"</item>
+        <item>"kuvasz"</item>
+        <item>"labrador"</item>
+        <item>"leonberg"</item>
+        <item>"lhasa"</item>
+        <item>"malamute"</item>
+        <item>"malinois"</item>
+        <item>"maltese"</item>
+        <item>"mastiff"</item>
+        <item>"mexicanhairless"</item>
+        <item>"mix"</item>
+        <item>"mountain"</item>
+        <item>"newfoundland"</item>
+        <item>"otterhound"</item>
+        <item>"ovcharka"</item>
+        <item>"papillon"</item>
+        <item>"pekinese"</item>
+        <item>"pembroke"</item>
+        <item>"pinscher"</item>
+        <item>"pitbull"</item>
+        <item>pointer</item>
+        <item>pomeranian</item>
+        <item>poodle</item>
+        <item>pug</item>
+        <item>puggle</item>
+        <item>pyrenees</item>
+        <item>redbone</item>
+        <item>retriever</item>
+        <item>ridgeback</item>
+        <item>rottweiler</item>
+        <item>saluki</item>
+        <item>samoyed</item>
+        <item>schipperke</item>
+        <item>schnauzer</item>
+        <item>setter</item>
+        <item>sheepdog</item>
+        <item>shiba</item>
+        <item>shihtzu</item>
+        <item>spaniel</item>
+        <item>springer</item>
+        <item>stbernard</item>
+        <item>terrier</item>
+        <item>vizsla</item>
+        <item>waterdog</item>
+        <item>weimaraner</item>
+        <item>whippet</item>
+        <item>wolfhound</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.doggo.viewmodel.SearchBreedsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_dog"
+        tools:context=".view.SearchDogFragment">
+
+        <TextView
+            android:id="@+id/textView_searchTitle"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/bone_background"
+            android:gravity="center"
+            android:hint="@string/search_TextView"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_allBreeds"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintLeft_toLeftOf="@id/textView_searchTitle"
+            app:layout_constraintRight_toRightOf="@id/textView_searchTitle"
+            app:layout_constraintTop_toBottomOf="@id/textView_searchTitle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_breeds"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            app:layout_constraintLeft_toLeftOf="@id/spinner_allBreeds"
+            app:layout_constraintRight_toRightOf="@id/spinner_allBreeds"
+            app:layout_constraintTop_toBottomOf="@id/spinner_allBreeds"
+            tools:listitem="@layout/search_breed_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

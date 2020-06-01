@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/randomDogs">
+
+    <fragment
+        android:id="@id/randomDogs"
+        android:name="com.example.doggo.view.RandomDogsFragment"
+        android:label="fragment_random_doggoes"
+        tools:layout="@layout/fragment_random_dogs" />
+    <fragment
+        android:id="@+id/searchDog"
+        android:name="com.example.doggo.view.SearchDogFragment"
+        android:label="fragment_search_dog"
+        tools:layout="@layout/fragment_search_dog" />
+    <fragment
+        android:id="@id/moreDogs"
+        android:name="com.example.doggo.view.MoreDogsFragment"
+        android:label="fragment_more_dogs"
+        tools:layout="@layout/fragment_more_dogs">
+        <action
+            android:id="@+id/action_moreDogs_to_dogDetailsActivity"
+            app:destination="@id/dogDetailsActivity"/>
+    </fragment>
+    <activity
+        android:id="@+id/dogDetailsActivity"
+        android:name="com.example.doggo.view.DogDetailsActivity"
+        android:label="DogDetailsActivity">
+    <argument
+        android:name="argDetails"
+        app:argType="com.example.doggo.model.more.DogBreed" />
+    </activity>
+</navigation>

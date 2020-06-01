@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/randomDogs"
+        android:icon="@drawable/ic_random"
+        android:title="@string/random">
+    </item>
+    <item
+        android:id="@+id/searchDog"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search">
+    </item>
+    <item
+    android:id="@+id/moreDogs"
+    android:icon="@drawable/ic_more"
+    android:title="@string/more">
+    </item>
+</menu>
