@@ -4,7 +4,6 @@ It uses MVVM architecture including (JetPack) Android third party libraries/depe
 
   - Navigation Component (navHost)
   - Retrofit/Glide/Gson
-  - Design
   - ViewModel and LiveData
   - RecyclerView and Cardview
   - SwipeToRefresh Layout
