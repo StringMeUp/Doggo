@@ -8,3 +8,4 @@ It uses MVVM architecture including (JetPack) Android third party libraries/depe
   - RecyclerView and Cardview
   - SwipeToRefresh Layout
   - HdodenHof CircleImageView
+  - Room Library Implementation (Entity/Dao/Database)
