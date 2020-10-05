@@ -7,11 +7,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface DogApiInterface {
-
-    //RANDOM DOG IMAGES|https://dog.ceo/api/breeds/image/random/10
-    //SPECIFIC/ALL BREEDS IMAGES|https://dog.ceo/api/breed/puggle/images/random/10
-    //MORE DOGS/IMAGES + DETAILS|https://raw.githubusercontent.com/DevTides/DogsApi/master/dogs.json
-
     @GET("breeds/image/random/10")
     fun getRandomDogs(): Call<RandomImages>
 

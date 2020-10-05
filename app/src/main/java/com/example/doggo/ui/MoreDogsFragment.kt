@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -17,9 +16,6 @@ import com.example.doggo.databinding.FragmentMoreDogsBinding
 import com.example.doggo.model.more.DogBreed
 import com.example.doggo.viewmodel.MoreDogsViewModel
 
-/**
- * A simple [Fragment] subclass.
- */
 class MoreDogsFragment : Fragment(), MoreAdapter.PositionListener {
 
     private lateinit var moreBinding: FragmentMoreDogsBinding
@@ -37,7 +33,7 @@ class MoreDogsFragment : Fragment(), MoreAdapter.PositionListener {
         moreBinding.viewModel = viewModel
         moreBinding.lifecycleOwner = viewLifecycleOwner
         moreAdapter = MoreAdapter(arrayListOf(), this)
-        staggeredLayoutM = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL)
+        staggeredLayoutM = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         return moreBinding.root
     }
 
@@ -51,7 +47,6 @@ class MoreDogsFragment : Fragment(), MoreAdapter.PositionListener {
         }
         observeList()
     }
-
 
     private fun observeList() {
         moreBinding.viewModel?.listMoreDogs?.observe(

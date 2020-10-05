@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/colorWhite"
-            android:padding="10dp">
+            android:padding="4dp">
 
             <ImageView
                 android:id="@+id/imageView_breed"

@@ -19,9 +19,6 @@ import com.example.doggo.databinding.FragmentSearchDogBinding
 import com.example.doggo.viewmodel.SearchBreedsViewModel
 import java.util.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class SearchDogFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
     //vars

@@ -1,9 +1,6 @@
 package com.example.doggo.model.more
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
-import androidx.room.TypeConverters
+import androidx.room.*
 import com.bumptech.glide.load.model.ByteArrayLoader
 import com.example.doggo.util.Converters
 import com.google.gson.annotations.SerializedName
@@ -32,6 +29,7 @@ data class DogBreed(
     @SerializedName("bred_for")
     val bredFor: String?,
 
+    @ColumnInfo(name = "dog_temperament")
     @SerializedName("temperament")
     val temperament: String?,
 

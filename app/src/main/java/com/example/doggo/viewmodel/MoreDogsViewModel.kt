@@ -16,6 +16,7 @@ import retrofit2.Response
 
 class MoreDogsViewModel(application: Application) : BaseViewModel(application) {
     val listMoreDogs = MutableLiveData<ArrayList<DogBreed>>()
+    val isLoading = MutableLiveData<Boolean>()
     private val sharedHelper = SharedPrefsHelper(application)
     private val refreshTime = 10000000000L //nanoseconds
     private val moreDogsBuilder =
@@ -31,6 +32,7 @@ class MoreDogsViewModel(application: Application) : BaseViewModel(application) {
     }
 
     private fun loadMoreRemoteDogs() {
+        isLoading.value = true
         val callMoreDogs = moreDogsBuilder.getMoreDogs()
         callMoreDogs.enqueue(object : Callback<List<DogBreed>> {
             override fun onFailure(call: Call<List<DogBreed>>, t: Throwable) {
@@ -42,11 +44,13 @@ class MoreDogsViewModel(application: Application) : BaseViewModel(application) {
                 response: Response<List<DogBreed>>
             ) {
                 if (!response.isSuccessful) {
+                    isLoading.value = false
                     Log.i(
                         "RESPONSE",
                         "The call was unsuccessful ${response.code()}"
                     )
                 } else {
+                    isLoading.value = false
                     val moreDogsList = response.body()
                     moreDogsList?.let {
                         listMoreDogs.value = ArrayList(it)
