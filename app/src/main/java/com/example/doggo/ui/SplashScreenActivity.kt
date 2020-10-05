@@ -1,4 +1,4 @@
-package com.example.doggo.view
+package com.example.doggo.ui
 
 import android.content.Intent
 import android.os.Bundle

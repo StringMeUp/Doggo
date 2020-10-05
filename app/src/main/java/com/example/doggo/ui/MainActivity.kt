@@ -1,12 +1,10 @@
-package com.example.doggo.view
+package com.example.doggo.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupWithNavController
 import com.example.doggo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

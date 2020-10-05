@@ -1,4 +1,4 @@
-package com.example.doggo.view
+package com.example.doggo.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -34,17 +34,16 @@ class MoreDogsFragment : Fragment(), MoreAdapter.PositionListener {
         moreBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_more_dogs, container, false)
         viewModel = ViewModelProvider(this).get(MoreDogsViewModel::class.java)
-        moreBinding.moreDogsViewModelModel = viewModel
+        moreBinding.viewModel = viewModel
         moreBinding.lifecycleOwner = viewLifecycleOwner
         moreAdapter = MoreAdapter(arrayListOf(), this)
         staggeredLayoutM = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL)
-        Toast.makeText(requireContext(), "Please swipe right.", Toast.LENGTH_LONG).show()
         return moreBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        moreBinding.moreDogsViewModelModel?.loadMoreDogs()
+        moreBinding.viewModel?.refresh()
         moreBinding.recyclerViewBreeds.apply {
             adapter = moreAdapter
             layoutManager = staggeredLayoutM
@@ -55,7 +54,7 @@ class MoreDogsFragment : Fragment(), MoreAdapter.PositionListener {
 
 
     private fun observeList() {
-        moreBinding.moreDogsViewModelModel?.listMoreDogs?.observe(
+        moreBinding.viewModel?.listMoreDogs?.observe(
             requireActivity(),
             Observer { breedList ->
                 breedList?.let {

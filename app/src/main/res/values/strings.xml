@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Doggo</string>
     <string name="title_textView">All Doggoes In One App</string>
+    <string name="more_dogs_title">More Dogs</string>
     //DogDetails and Dog Card
     <string name="name">name</string>
     <string name="temperament">temperament</string>

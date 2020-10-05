@@ -2,7 +2,7 @@ package com.example.doggo.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.doggo.model.randomSearch.RandomImages
+import com.example.doggo.model.modelrandom.RandomImages
 import com.example.doggo.networking.DogApiInterface
 import com.example.doggo.util.ServiceBuilder
 import retrofit2.Call

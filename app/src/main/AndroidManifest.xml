@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
         <activity
-            android:name=".view.SplashScreenActivity"
+            android:name=".ui.SplashScreenActivity"
             android:noHistory="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -21,7 +21,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".view.DogDetailsActivity" />
-        <activity android:name=".view.MainActivity" />
+        <activity android:name=".ui.DogDetailsActivity" />
+        <activity android:name=".ui.MainActivity" />
     </application>
 </manifest>

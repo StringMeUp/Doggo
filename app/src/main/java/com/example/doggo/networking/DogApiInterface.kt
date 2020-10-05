@@ -1,7 +1,7 @@
 package com.example.doggo.networking
 
 import com.example.doggo.model.more.DogBreed
-import com.example.doggo.model.randomSearch.RandomImages
+import com.example.doggo.model.modelrandom.RandomImages
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
